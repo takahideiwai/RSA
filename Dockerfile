@@ -16,6 +16,9 @@ RUN  chown  jovyan /home/jovyan/answers/*
 RUN  chgrp   users /home/jovyan/answers/*
 RUN chmod 555 /home/jovyan/answers/*
 
+#Copy instructions 
+COPY instructions.ipynb /home/jovyan
+
 
 
 
