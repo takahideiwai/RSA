@@ -10,7 +10,7 @@ If you are a student studying cybersecurity concepts, it is essential for you to
 
 ### Design and Architecture  
 This lab can be completed by using one Jupyter notebook container. The container comes with all the necessary tools such as *vim* text editor, *openssl* libraries, and *gcc* compiler.
-The *answers* directory which contains all of the C code necessary to complete the lab has been created to further accomodate the students who are new to C. Students may use these codes as an exmple to complete the lab. The jupyter notebook also comes with the instructions on how to complete all of the tasks. The instructions can be also found [here](https://takahideiwai.github.io/Cryptography/03-rsaAns/index.html).  
+The *answers* directory which contains all of the C code necessary to complete the lab has been created to further accomodate the students who are new to C. Students may use these codes as an exmple to complete the lab. The instructions can be found [here](https://takahideiwai.github.io/Cryptography/03-rsaAns/index.html). It is best for users to open up another tab and access the instructions while completing the tasks. 
 
 ### Installation and Usage
 In order to build the image, type in the following commands in the terminal. 
@@ -22,10 +22,10 @@ After the image has been created, you will be able to run the container by typin
 ```source
 docker run -p 8888:8888 rsa
 ```
-You will be able to access the container by opening any web browser and typing in 0.0.0.0:8888 as the IP address. Once you gained access to the login screen, you will be able to login by copy and pasting the random token in which will appear in your terminal. 
+You will be able to access the container by opening any web browser and typing in 0.0.0.0:8888 as the IP address. Once you gained access to the login screen, you will be able to login by copy and pasting the random token which will appear in your terminal. 
 
 ### Usage  
-Upon successful login, the user will have access the Jupyter Notebook interface which contains access to the terminal, answers directory, and instructions. The user will be able to access the instructions which contains a step by step instructions on how to complete this lab. 
+Upon successful login, the user will have access the Jupyter Notebook interface which contains access to the terminal, answers directory et cetera. The user will be able to access the instructions which contains a step by step instructions on how to complete this lab [here](https://takahideiwai.github.io/Cryptography/03-rsaAns/index.html).
 ### How to contribute
 To report issues or contribute enhancements to this application, open a GitHub issue.
 This lab was provided by [Seed lab](http://www.cis.syr.edu/~wedu/seed/Labs_16.04/Crypto/Crypto_RSA/).
