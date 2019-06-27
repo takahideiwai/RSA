@@ -1,24 +1,25 @@
-# Base image -> jupyter/base-notebook
-FROM jupyter/base-notebook:61d8aaedaeaf
+# Base image -> VNC
+FROM dorowu/ubuntu-desktop-lxde-vnc:bionic
 
 MAINTAINER Takahide Iwai "tiwai@purdue.edu"
 
-#Change the user's permission to root in order to modify the Jupyter notebook 
-USER root
-
 #install necessary tools
-RUN apt-get update && apt-get -y install vim libssl-dev gcc python2.7 python
+RUN apt-get update && apt-get -y install gedit libssl-dev gcc python
+
+#create a non-root user
+RUN useradd -d /home/user -m -s /bin/bash user
+
+RUN echo 'user:user' | chpasswd
+
+ENV USER=user \
+    PASSWORD=user 
+
+RUN mkdir /home/user/Desktop
+
 
 #Copy necessary C code
-COPY /answers/* /home/jovyan/answers/
-RUN chmod 777 /home/jovyan/answers/
-RUN  chown  jovyan /home/jovyan/answers/*
-RUN  chgrp   users /home/jovyan/answers/*
-RUN chmod 555 /home/jovyan/answers/*
+COPY /answers/* /home/user/Desktop/
 
-#Copy instructions 
-COPY instructions.ipynb /home/jovyan
-CMD ["start-notebook.sh","--NotebookApp.token="]
 
 
 

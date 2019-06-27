@@ -6,11 +6,11 @@ RSA (RivestShamirAdleman) is one of the first public-key cryptosystems and is wi
 If you are an instructor teaching cybersecurity concepts, this lab can be used to provide hands-on experience on coding in C and how RSA works when encrypting/decrypting a message, signing/verifying signatures. This lab requires the students to understand the basic theory and mathematical concepts of RSA.
   
 **Students**   
-If you are a student studying cybersecurity concepts, it is essential for you to understand how RSA which is a widely used algorithm in encrypting and decrypting messages, signing and verifying digital certificates. You will be able to further understand how RSA works by doing hands on experiment in C language. 
+If you are a student studying cybersecurity concepts, it is essential for you to understand how RSA, which is a widely used algorithm in encrypting and decrypting messages, signing and verifying digital certificates. You will be able to further understand how RSA works by doing hands on experiment in C language. 
 
 ### Design and Architecture  
-This lab can be completed by using one Jupyter notebook container. The container comes with all the necessary tools such as *vim* text editor, *openssl* libraries, and *gcc* compiler.
-The *answers* directory which contains all of the C code necessary to complete the lab has been created to further accomodate the students who are new to C. Students may use these codes as an exmple to complete the lab. The instructions can be found [here](https://takahideiwai.github.io/Cryptography/03-rsaAns/index.html). If you are comfortable coding in C, it is better to use [this](https://takahideiwai.github.io/Cryptography/02-rsa/index.html) instruction set. It is best for users to open up another tab and access the instructions while completing the tasks. 
+This lab can be completed by using one VNC container. The container comes with all the necessary tools such as *gedit* text editor, *openssl* libraries, and *gcc* compiler.
+The step by step instructions to complete all of the tasks can be found [here](https://takahideiwai.github.io/Cryptography/02-rsa/index.html). User will be able to access the instructions in a firefox web browser which is available within the container. 
 
 ### Installation and Usage
 In order to build the image, type in the following commands in the terminal.  
@@ -20,12 +20,12 @@ docker build -t rsa .
 ```
 After the image has been created, you will be able to run the container by typing in
 ```source
-docker run -p 8888:8888 rsa
+docker run -d -v /dev/shm:/dev/shm -p 8888:80 rsa
 ```
 You will be able to access the container by opening any web browser and typing in 0.0.0.0:8888 as the IP address.  
 
 ### Usage  
-Upon successful login, the user will have access to the Jupyter Notebook interface which contains access to the terminal, answers directory et cetera. The user will be able to access the instructions which contains a step by step instructions on how to complete this lab by opening instructions.ipynb file. 
+Upon successful access the user will have access to the VNC interface which contains access to the terminal, gedit text editor, and firefox web browser. The user will be able to access the instructions which contains a step by step instructions on how to complete this lab by opening https://takahideiwai.github.io/Cryptography/02-rsa/index.html in the web browser. 
 ### How to contribute
 To report issues or contribute enhancements to this application, open a GitHub issue.
 This lab was provided by [Seed lab](http://www.cis.syr.edu/~wedu/seed/Labs_16.04/Crypto/Crypto_RSA/).
