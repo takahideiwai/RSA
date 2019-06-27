@@ -22,7 +22,7 @@ After the image has been created, you will be able to run the container by typin
 ```source
 docker run -p 8888:8888 rsa
 ```
-You will be able to access the container by opening any web browser and typing in 0.0.0.0:8888 as the IP address. Once you gained access to the login screen, you will be able to login by copy and pasting the random token which will appear in your terminal. 
+You will be able to access the container by opening any web browser and typing in 0.0.0.0:8888 as the IP address.  
 
 ### Usage  
 Upon successful login, the user will have access to the Jupyter Notebook interface which contains access to the terminal, answers directory et cetera. The user will be able to access the instructions which contains a step by step instructions on how to complete this lab by opening instructions.ipynb file. 
