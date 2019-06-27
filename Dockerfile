@@ -14,11 +14,15 @@ RUN echo 'user:user' | chpasswd
 ENV USER=user \
     PASSWORD=user 
 
+# Create a desktop directory
 RUN mkdir /home/user/Desktop
 
+#Copy instructions.txt on to the Desktop
+COPY instructions.txt /home/user/Desktop
+RUN chmod 444 /home/user/Desktop/instructions.txt
 
-#Copy necessary C code
-COPY /answers/* /home/user/Desktop/
+#Copy necessary C code for testing purposes
+COPY /answers/* /home/user/
 
 
 
