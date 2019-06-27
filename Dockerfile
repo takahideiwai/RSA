@@ -1,5 +1,5 @@
 # Base image -> jupyter/base-notebook
-FROM jupyter/base-notebook
+FROM jupyter/base-notebook:61d8aaedaeaf
 
 MAINTAINER Takahide Iwai "tiwai@purdue.edu"
 
@@ -18,6 +18,7 @@ RUN chmod 555 /home/jovyan/answers/*
 
 #Copy instructions 
 COPY instructions.ipynb /home/jovyan
+CMD ["start-notebook.sh","--NotebookApp.token="]
 
 
 
