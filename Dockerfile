@@ -21,8 +21,6 @@ RUN mkdir /home/user/Desktop
 COPY instructions.txt /home/user/Desktop
 RUN chmod 444 /home/user/Desktop/instructions.txt
 
-#Copy necessary C code for testing purposes
-COPY /answers/* /home/user/
 
 
 
