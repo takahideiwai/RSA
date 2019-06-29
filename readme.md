@@ -25,7 +25,7 @@ docker run -d -v /dev/shm:/dev/shm -p 8888:80 rsa
 You will be able to access the container by opening any web browser and typing in 0.0.0.0:8888 as the IP address.  
 
 ### Usage  
-Upon successful access the user will have access to the VNC interface which contains access to the terminal, gedit text editor, and firefox web browser. The user will be able to access the instructions which contains a step by step instructions on how to complete this lab by opening https://takahideiwai.github.io/Cryptography/02-rsa/index.html in the web browser. 
+Upon successful access to the container, user will have access to the VNC interface which contains access to the terminal, gedit text editor, and firefox web browser. The user will be able to access the instructions which contains a step by step instructions on how to complete this lab by opening https://takahideiwai.github.io/Cryptography/02-rsa/index.html in the web browser. 
 ### How to contribute
 To report issues or contribute enhancements to this application, open a GitHub issue.
 This lab was provided by [Seed lab](http://www.cis.syr.edu/~wedu/seed/Labs_16.04/Crypto/Crypto_RSA/).
