@@ -17,9 +17,7 @@ ENV USER=user \
 # Create a desktop directory
 RUN mkdir /home/user/Desktop
 
-#Copy instructions.txt on to the Desktop
-COPY instructions.txt /home/user/Desktop
-RUN chmod 444 /home/user/Desktop/instructions.txt
+
 
 
 
