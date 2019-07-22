@@ -20,7 +20,7 @@ docker build -t rsa .
 ```
 After the image has been created, you will be able to run the container by typing in
 ```source
-docker run -d -v /dev/shm:/dev/shm -p 8888:80 rsa
+docker run -d -p 80 rsa  
 ```
 You will be able to access the container by opening any web browser and typing in 0.0.0.0:8888 as the IP address.  
 

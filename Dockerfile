@@ -14,8 +14,7 @@ RUN echo 'user:user' | chpasswd
 ENV USER=user \
     PASSWORD=user 
 
-# Create a desktop directory
-RUN mkdir /home/user/Desktop
+
 
 
 
