@@ -21,8 +21,15 @@ docker build -t rsa .
 After the image has been created, you will be able to run the container by typing in
 ```source
 docker run -d -p 80 rsa  
+```  
+You will be able to figure out the port number by typing in
+```source
+docker ps
 ```
-You will be able to access the container by opening any web browser and typing in 0.0.0.0:8888 as the IP address.  
+You will be able to access the container by opening any web browser and typing in the following ip address. 
+```source
+0.0.0.0:<port number>
+```
 
 ### Usage  
 Upon successful access to the container, user will have access to the VNC interface which contains access to the terminal, gedit text editor, and firefox web browser. The user will be able to access the instructions which contains a step by step instructions on how to complete this lab by opening https://takahideiwai.github.io/Cryptography/02-rsa/index.html in the web browser. 
